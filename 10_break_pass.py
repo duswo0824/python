@@ -12,14 +12,10 @@ running = True
 
 for i in range(1,10):
 
-#3,6,9를 제외한 숫자만 실행
-
     # if i ==3:
     #     continue
-    # if i ==6:
-    #     continue
-    # if i ==9:
-    #     continue
+
+#3,6,9를 제외한 숫자만 실행
 
     # or 조건
     if i ==3 | i ==6 | i==9:
