@@ -29,6 +29,7 @@ idx = 0
 #   print(f'3의 값은 {idx}번에 있다.')
 #   idx += 1
 
+#for 문
 for n in b:
      if n == 3:
         print(f'3이 있는 인덱스{idx}')
