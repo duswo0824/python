@@ -24,16 +24,15 @@ b = [3,4,1,2,3,4,5,6,1,3,2] # 모든 3을 찾아 보세요.
 
 # while 문
 idx = 0
-while True:
-   idx = b.index(3,idx)
-   print(f'3의 값은 {idx}번에 있다.')
-   idx += 1
+#while True:
+#    idx = b.index(3,idx)
+#   print(f'3의 값은 {idx}번에 있다.')
+#   idx += 1
 
-# for 문
-# for n in b:
-#     if n == 3:
-#         print(f'3이 있는 인덱스{idx}')
-#     idx += 1
+for n in b:
+     if n == 3:
+        print(f'3이 있는 인덱스{idx}')
+     idx += 1
 
 # 내가 한 방법
 # print(b.index(3)) # 0
@@ -41,4 +40,11 @@ while True:
 # print(b.index(3,5)) # 9
 # print(b.index(3,10)) # ValueError: 3 is not in list
 
+# 리스트 list 요소 삭제
+# del a[3]과 a. remove(3)
+# del 은 특정 인덱스의 값을 지운다. # 3번 인덱스의 값 삭제
+# remove 는 해당 값을 지운다.(한개만) # 3을 삭제 (하나만)
 
+print(f'a : {a}')
+a.remove(3)
+print(f'a : {a}')
