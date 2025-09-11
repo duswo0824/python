@@ -23,11 +23,12 @@ b = [3,4,1,2,3,4,5,6,1,3,2] # 모든 3을 찾아 보세요.
 # print(f'3의 값은 {idx}번에 있다.')
 
 # while 문
-idx = 0
-#while True:
-#    idx = b.index(3,idx)
-#   print(f'3의 값은 {idx}번에 있다.')
-#   idx += 1
+# idx = 0 # idx 라는 변수에 0 (0부터 시작하기 위해서)
+# while True: # 무한으로 돌아가게 하기 위해 True
+#     idx = b.index(3,idx) # 3이라는 값을 몇번부터 찾을 것인가 idx 0 번 부터시작
+#     print(f'3의 값은 {idx}번에 있다.')
+#     idx +=1  # 찾은 idx로 부터 +1을 해줘야 같은 곳에서 맴돌지 않고 다음 것을 진행
+#     #3이라는 숫자를 더이상 찾지 못하는 경우 에러가 나서 프로그램이 자연스럽게 종료
 
 #for 문
 for n in b:
@@ -69,13 +70,14 @@ print(f'a 안에 9가 {a.count(9)} 개 있다.') # 없는 값은 0을 반환
 
 # a 안에 있는 모든 3을 지워주세요
 
+#while 문
 while True: #while True(무조건 돌린다)
     a.remove(3)
     if a.count(3) == 0:
         break
 print(a)
 
-# 내가 한 방법
+#for 문
 # for n in a:
 #     if n == 3:
 #         a.remove(3)
