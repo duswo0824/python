@@ -29,6 +29,7 @@ for i in range(1,10):
     if i % 3 == 0:
         continue
 
+    # 멤버 연산자
     if i in [3,6,9]: #i 안에 3,6,9가 포함되어 있다면?
         continue
 
