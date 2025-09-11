@@ -30,7 +30,6 @@ print(f'a의 마지막 방의 값={a[len(a)-1]}')
 # python에서만 사용되는 방식, 0보다 뒤로 가면 맨 뒤로 이동된다는 개념(-1)
 print(f'a의 마지막 방의 값={a[-1]}')
 
-
 # 리스트 정렬(sort) - 말 그대로 정렬하는 것
 shop_list.sort() # 오름차순 (작은수가 위로 큰수가 아래로)
 print(f'shop_list:{shop_list}')
@@ -51,3 +50,4 @@ print(f'a:{a}')
 # list 삭제
 del a[1] # 1번 인덱스를 삭제
 print(f'a:{a}')
+
