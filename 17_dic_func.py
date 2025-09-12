@@ -35,7 +35,7 @@ print(dic['phone'])
 # dic 안에 있는 모든 키와 값을 키:값 형태로 출력해 보자
 # 1. 키를 뽑아낸 다음, 키를 가지고 값을 뽑아내는 방법
 for keys in dic.keys():
-    print(f'{keys}: {dic[keys]}')
+    print(f'{keys}: {dic[keys]}')  # 값을 가져오는 방법 dic[keys]
 # 2. 키와 값을 동시에 뽑아낸 다음 거기서 키와 값을 각각 추출하는 방식
 for items in dic.items():
     # print(items) # ('name', 'hong,gil-dong')으로 출력 tuple형태 
