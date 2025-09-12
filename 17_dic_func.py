@@ -49,7 +49,6 @@ members = {
     'kim':63, 'lee':88, 'park':97, "gang":77, "hwang":100, "ga":65,
     "na":92, "la":90, "wang":100, "gu":79
 }
-
 # 90이상인 사람의 이름만 출력
 for item in members.items(): # members의 키와 값을 둘다 가져온다 # kim:63 (0번방 : 1번방)
     if item[1]>=90: # 1번방이 점수
@@ -61,3 +60,19 @@ for item in members.items(): # members의 키와 값을 둘다 가져온다 # ki
 # for keys in members.keys():
 #     if members[keys] >= 90:
 #         print(keys)
+
+# key in dic : 해당 키가 사전에 존재하는지 확인 
+# 검색 시작 여부를 결정할 수 있는 방법
+yn = 'kim' in members
+print(f'kim 이 있는가? {yn}')
+
+yn = 'jung' in members
+print(f'jung 이 있는가? {yn}')
+
+# update : 이미 있는 키면 수정을, 없는 키면 추가를 하는 함수
+dic.update({'name':'홍길동','age':30,'married':False})
+print(dic) #이름은 있는키 한글 홍길동으로 수정 나머지는 없는 키
+
+# dic.clear() : 사전안의 내용을 모두 지운다.
+dic.clear()
+print(dic)  # {} 로 출력
