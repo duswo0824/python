@@ -7,8 +7,7 @@ print(plus(5)) # 10
 # 아무 것도 넣지 않았을 때 대체할 수 있는 값 = 기본값 (num=0)을 넣으면 # 5
 print(plus()) # plus() missing 1 required positional argument: 'num'
 
-# *
-# 인자값의 종류를 튜플(수정이 불가능한 List 형태)로만 받겠다.
+# * = 인자값의 종류를 튜플(수정이 불가능한 List 형태)로만 받겠다.
 def tuple_args(*numbers):
     print(numbers) # 튜플 형태로 반환
     total = 0
@@ -19,4 +18,11 @@ def tuple_args(*numbers):
 # 이 방식은 사용자가 인자값의 갯수를 자유롭게 정해서 넣을 수 있다.
 print(tuple_args(1, 2, 3, 4, 5))
 
-# **
+# ** = 매개변수를 사전 형태{키:값}로 받겠다.
+def dic_args(**dic):
+    print(dic)
+
+result = dic_args(kim=50, lee=100, park=70, na=90)
+print(result)
+
+# 위 함수를 실행하면 입력된 값들의 합산이 반환되도록 하세요.
