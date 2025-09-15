@@ -20,9 +20,17 @@ print(tuple_args(1, 2, 3, 4, 5))
 
 # ** = 매개변수를 사전 형태{키:값}로 받겠다.
 def dic_args(**dic):
-    print(dic)
-
-result = dic_args(kim=50, lee=100, park=70, na=90)
-print(result)
+    #  1. dic에서 값만 빼온다.
+    values = dic.values()
+    print(values)
+    # 2. 이 값들을 하나씩 더해 누적시킨다.
+    total = 0 # 누적시키는 값 = 0
+    for value in values:
+        # print(value)
+        total += value
+    # 3. 누적시킨 값을 밖으로 return 한다.
+    return total
 
 # 위 함수를 실행하면 입력된 값들의 합산이 반환되도록 하세요.
+result = dic_args(kim=50, lee=100, park=70, na=90)
+print(result)
