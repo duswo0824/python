@@ -9,10 +9,11 @@ class Puppy:
         # 그런데 name=name 형태로는 어떤 것이 객체의 멤버인지 알 수 없다.
         # 그래서 멤버인 녀석은 self 를 이용하여 표시해 준다.
 
+        # self. 을 주석하면 오류로 나타난다. def에서 없어지기 때문에
         self.name=name # self(나)에 있는 이름에다 이름을 넣는다. # 현재 이 객체에 있는
         self.goal=goal
 
-puppy = Puppy("멍멍이","집지키기") # 객체화
+puppy = Puppy("멍멍이","집지키기") # Puppy() class를 객체화
 print(f'이름 : {puppy.name} / 목적 : {puppy.goal} ')
 
 
@@ -31,5 +32,5 @@ print(f'이름 : {puppy.name} / 목적 : {puppy.goal} ')
 #         self.name=name # self(나)에 있는 이름에다 이름을 넣는다. # 현재 이 객체에 있는
 #         self.goal=goal
 #
-# puppy = Puppy("멍멍이","집지키기") # Puppy라는 함수를 puppy에 복사 (객체화)
+# puppy = Puppy("멍멍이","집지키기") # Puppy라는 class를 puppy에 복사 (객체화)
 # print(f'이름 : {puppy.name} / 목적 : {puppy.goal} ') #화면에 출력
