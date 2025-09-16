@@ -32,6 +32,7 @@ r2.how_count()
 
 # 마찬가지로 원본의 내용을 확인하고 싶다면 원본영역으로 가서 확인해야 한다.
 print(f'원본 count : {Robot.count}')
+
 # 멤버 함수는 self라는 객체를 항상 가지고 있는데 원본은 복사한 것이 아니기 때문에 객체가 없음
 #@classmethod # 원본 영역의 변수를 건드릴 수 있다는 표시를 넣어주면 실행가능
 Robot.std_count() #Robot.std_count() missing 1 required positional argument: 'self'
