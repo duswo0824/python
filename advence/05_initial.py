@@ -32,5 +32,5 @@ print(f'이름 : {puppy.name} / 목적 : {puppy.goal} ')
 #         self.name=name # self(나)에 있는 이름에다 이름을 넣는다. # 현재 이 객체에 있는
 #         self.goal=goal
 #
-# puppy = Puppy("멍멍이","집지키기") # Puppy라는 class를 puppy에 복사 (객체화)
+# puppy = Puppy("멍멍이","집지키기") # Puppy라는 class를 puppy에 복사 (객체화) #원본의 보호
 # print(f'이름 : {puppy.name} / 목적 : {puppy.goal} ') #화면에 출력
