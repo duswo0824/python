@@ -16,4 +16,14 @@ class Person(Jumper, Runner): #Person 클래스가 Jumper와 Runner 를 상속�
     def walk(self):
         print('걷는다.')
 
+# wallk() 함수를 사용하기 위해 Person 클래스를 객체화한다.
+p= Person()
+p.walk()
 
+# 상속 받은 Jumper와 Runner의 함수들을 내것처럼(p. 객체로부터) 사용한다.
+# 상속 받으면 좋은 점 1. 객체 입장에서는 기능이 늘어난다.
+# 상속 받으면 좋은 점 2. 사용자 입장에서는 하나의 객체화로 여러 기능을 사용할 수 있다.
+p.run()
+p.sprint()
+p.jump()
+p.high_jump()
