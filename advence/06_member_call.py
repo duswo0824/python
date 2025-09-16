@@ -26,7 +26,7 @@ class Car:
 car = Car()
 # 객체를 통해 사용하고 싶은 멤버 호출
 # 시동걸기
-car.start() #car의 start 라는 함수 사용
+car.start() #car라는 변수에서 start 라는 함수 사용
 # 변속하기
 car.change(3)
 print(f'현재 car의 gear 단수 : {car.gear}')
